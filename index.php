@@ -553,7 +553,7 @@
                 </div><!-- /.testimonial-content -->
                 <div class="testimonial__meta">
                   <div class="testimonial__thumb">
-                    <img src="assets/images/testimonials/thumbs/1.png" alt="author thumb" class="img-fluid">
+                   <i class="fa fa-user-circle text-white" style="font-size:25px"></i>
                   </div><!-- /.testimonial-thumb -->
                   <h5 class="testimonial__meta-title">Martin Hope</h5>
                   <p class="testimonial__meta-desc">Pro Dust</p>
@@ -567,7 +567,7 @@
                 </div><!-- /.testimonial-content -->
                 <div class="testimonial__meta">
                   <div class="testimonial__thumb">
-                    <img src="assets/images/testimonials/thumbs/1.png" alt="author thumb" class="img-fluid">
+                   <i class="fa fa-user-circle text-white" style="font-size:25px"></i>
                   </div><!-- /.testimonial-thumb -->
                   <h5 class="testimonial__meta-title">Martin Hope</h5>
                   <p class="testimonial__meta-desc">Pro Dust</p>

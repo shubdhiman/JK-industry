@@ -413,7 +413,7 @@
         </div><!-- /.col-lg-7 -->
         <div class="col-sm-12 col-md-12 col-lg-5">
           <div class="cta__banner">
-            <div class="bg-img"><img src="assets/images/backgrounds/pattern/1.jpg" alt="background"></div>
+            <div class="bg-img"></div>
             <h5 class="cta__title">Dedicated Customer <br> Teams & An Agile Services</h5>
             <p class="cta__desc">Building relationships and portfolio that last. Serving an impressive list of
               long-term clients with
@@ -586,23 +586,37 @@
   <section id="contactInfo" class="contact-info pt-40 pb-20">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-7">
+        <div class="col-sm-12 col-md-12 col-lg-12">
           <strong class="text-center d-block mt-50 mb-20">We will get back to you within 24 hours.</strong>
         </div><!-- /.col-lg-7 -->
-        <div class="col-sm-12 col-md-12 col-lg-5">
+        <div class="col-sm-12 col-md-12 col-lg-12">
           <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-12 col-xl-6">
+            <div class="col-sm-6 col-md-6 col-lg-12 col-xl-4">
               <div class="contact__info-box">
                 <div class="contact__info-box-icon">
                   <i class="icon-phone"></i>
                 </div><!-- /.contact__info-box-icon -->
                 <div class="contact__info-box-text">
                   <span>Call Us:</span>
-                  <strong><a href="tel:007404299390">(+91) 7404299390</a></strong>
+                  <strong><a href="tel:07404299390">(+91) 74042-99390</a></strong>
                 </div><!-- /.contact__info-box-text -->
               </div><!-- /.contact__info-box -->
             </div><!-- /.col-lg-6 -->
-            <div class="col-sm-6 col-md-6 col-lg-12 col-xl-6">
+
+            <div class="col-sm-6 col-md-6 col-lg-12 col-xl-4">
+              <div class="contact__info-box">
+                <div class="contact__info-box-icon">
+                  <i class="icon-phone"></i>
+                </div><!-- /.contact__info-box-icon -->
+                <div class="contact__info-box-text">
+                  <span>Call Us:</span>
+                  <strong><a href="tel:094169-35482">(+91) 94169-35482</a></strong>
+                </div><!-- /.contact__info-box-text -->
+              </div><!-- /.contact__info-box -->
+            </div><!-- /.col-lg-6 -->
+
+
+            <div class="col-sm-6 col-md-6 col-lg-12 col-xl-4">
               <div class="contact__info-box" >
                 <div class="contact__info-box-icon">
                   <i class="icon-envelope"></i>

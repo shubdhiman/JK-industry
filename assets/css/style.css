@@ -2593,7 +2593,7 @@ textarea.form-control {
   padding: 0 20px;
   height: 100px;
   line-height: 100px;
-  background-color: #3c40c6;
+  /* background-color: #3c40c6; */
 }
 
 .navbar .logo-dark {
@@ -4325,7 +4325,7 @@ textarea.form-control {
   font-size: 14px;
   line-height: 1;
   font-weight: 700;
-  color: #3c40c6;
+  color: #ffffff;
   margin-bottom: 18px;
 }
 

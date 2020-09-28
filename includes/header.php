@@ -16,16 +16,21 @@
           </button>
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav mx-auto">
-              <li class="nav__item with-dropdown">
+              <li class="nav__item">
+                <a href="index.php" class="nav__item-link">Home</a>
+              </li><!-- /.nav-item -->
+
+
+              <!-- <li class="nav__item with-dropdown">
                 <a href="index.php" class="dropdown-toggle nav__item-link active">Home</a>
                 <i class="fa fa-angle-right" data-toggle="dropdown"></i>
                 <ul class="dropdown-menu">
                   <li class="nav__item"><a href="index.php" class="nav__item-link">Home Main</a></li>
+                  <!- /.nav-item -->
+                  <!-- <li class="nav__item"><a href="home-classic.php" class="nav__item-link">Home classic</a></li> -->
                   <!-- /.nav-item -->
-                  <li class="nav__item"><a href="home-classic.php" class="nav__item-link">Home classic</a></li>
-                  <!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
+                <!-- </ul><-- /.dropdown-menu -- --
+              </li>/.nav-item--->
           
               <li class="nav__item with-dropdown">
                 <a href="#" class="dropdown-toggle nav__item-link">Products</a>

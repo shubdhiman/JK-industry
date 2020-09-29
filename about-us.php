@@ -8,7 +8,7 @@
       name="description"
       content="Axima - Factory and Manufacturing Html Template"
     />
-    <link href="assets/images/favicon/favicon.png" rel="icon" />
+    <link href="assets/images/logo/jk-ind-logo.png" rel="icon">
     <title>Axima - Factory and Manufacturing Html Template</title>
     <link
       rel="stylesheet"

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="Axima - Factory and Manufacturing Html Template">
-  <link href="assets/images/favicon/favicon.png" rel="icon">
+  <link href="assets/images/logo/jk-ind-logo.png" rel="icon">   
   <title>Axima - Factory and Manufacturing Html Template</title>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Heebo:400,500,700%7cRajdhani:400,500,600,700&display=swap">

@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="JK Industry - Factory and Manufacturing Html Template">
-  <link href="assets/images/favicon/favicon.png" rel="icon">
+  <link href="assets/images/logo/jk-ind-logo.png" rel="icon">
   <title>JK Industry - Factory and Manufacturing Html Template</title>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Heebo:400,500,700%7cRajdhani:400,500,600,700&display=swap">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
+<?php
+    include("./api/helper/db.php");
+    include("./api/products/Products.php");
+    $product = new Products($conn);
+    $allActiveItemList = $product->getActiveItemList($conn);
+    $allActiveMaterialGroup = $product->getActiveMaterialGroup($conn);
+?>
+
 
 <body>
   <div class="wrapper">
@@ -93,91 +101,29 @@
           <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="carousel owl-carousel carousel-dots" data-slide="3" data-slide-md="2" data-slide-sm="1"
               data-autoplay="true" data-nav="false" data-dots="true" data-space="30" data-loop="true" data-speed="800">
-              <div class="service-item">
-                <div class="service__img">
-                  <img src="assets/images/services/1.jpg" alt="service" class="img-fluid">
-                </div><!-- /.service-img -->
-                <div class="service__content">
-                  <h4 class="service__title">Retail & Consumer</h4>
-                  <p class="service__desc">Petroleum and natural gas are nonrenewable sources of energy, a liquid found
-                    underground that can be used to make gasoline.</p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <i class="icon-arrow-right arrow-rounded"></i>
-                    <span>Read More</span>
-                  </a>
-                </div><!-- /.service-content -->
-              </div><!-- /.service-item -->
-              <div class="service-item">
-                <div class="service__img">
-                  <img src="assets/images/services/2.jpg" alt="service" class="img-fluid">
-                </div><!-- /.service-img -->
-                <div class="service__content">
-                  <h4 class="service__title">Sciences & Healthcare</h4>
-                  <p class="service__desc">Professional discipline deals with designing, planning, construction and
-                    infrastructures management such as roads, tunnels, bridges.</p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <i class="icon-arrow-right arrow-rounded"></i>
-                    <span>Read More</span>
-                  </a>
-                </div><!-- /.service-content -->
-              </div><!-- /.service-item -->
-              <div class="service-item">
-                <div class="service__img">
-                  <img src="assets/images/services/3.jpg" alt="service" class="img-fluid">
-                </div><!-- /.service-img -->
-                <div class="service__content">
-                  <h4 class="service__title">Industrial & Chemical</h4>
-                  <p class="service__desc">Materials science principles to design, analyze, manufacture, and maintain
-                    mechanical systems. It is one of the oldest .</p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <i class="icon-arrow-right arrow-rounded"></i>
-                    <span>Read More</span>
-                  </a>
-                </div><!-- /.service-content -->
-              </div><!-- /.service-item -->
-              <div class="service-item">
-                <div class="service__img">
-                  <img src="assets/images/services/4.jpg" alt="service" class="img-fluid">
-                </div><!-- /.service-img -->
-                <div class="service__content">
-                  <h4 class="service__title">Power Generation</h4>
-                  <p class="service__desc">Produced in huge quantities and critical ingredients for products used by
-                    both
-                    industry and the general consumer. </p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <i class="icon-arrow-right arrow-rounded"></i>
-                    <span>Read More</span>
-                  </a>
-                </div><!-- /.service-content -->
-              </div><!-- /.service-item -->
-              <div class="service-item">
-                <div class="service__img">
-                  <img src="assets/images/services/5.jpg" alt="service" class="img-fluid">
-                </div><!-- /.service-img -->
-                <div class="service__content">
-                  <h4 class="service__title">Food & Beverage</h4>
-                  <p class="service__desc">The automotive industry comprises a wide range of companies involved in the
-                    design, development, manufacturing, and selling.</p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <i class="icon-arrow-right arrow-rounded"></i>
-                    <span>Read More</span>
-                  </a>
-                </div><!-- /.service-content -->
-              </div><!-- /.service-item -->
-              <div class="service-item">
-                <div class="service__img">
-                  <img src="assets/images/services/6.jpg" alt="service" class="img-fluid">
-                </div><!-- /.service-img -->
-                <div class="service__content">
-                  <h4 class="service__title">Oil & Gas</h4>
-                  <p class="service__desc">Building a bridge is a complex undertaking requiring knowledge and expertise.
-                    Several variables, including engineering.</p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <i class="icon-arrow-right arrow-rounded"></i>
-                    <span>Read More</span>
-                  </a>
-                </div><!-- /.service-content -->
-              </div><!-- /.service-item -->
+
+
+              <?php
+                 foreach($allActiveItemList as $item){
+                      ?>
+                         <div class="service-item">
+                            <div class="service__img">
+                              <img src="assets/images/services/1.jpg" alt="service" class="img-fluid">
+                            </div><!-- /.service-img -->
+                            <div class="service__content">
+                              <h4 class="service__title"><?php echo $item["ITEM_NAME"]; ?></h4>
+                              <p class="service__desc">Petroleum and natural gas are nonrenewable sources of energy, a liquid found
+                                underground that can be used to make gasoline.</p>
+                              <a href="#" class="btn btn__secondary btn__link">
+                                <i class="icon-arrow-right arrow-rounded"></i>
+                                <span><?php echo $item["MATERIAL_GROUP_NAME"]; ?></span>
+                              </a>
+                            </div><!-- /.service-content -->
+                          </div><!-- /.service-item -->
+                      <?php
+                 }
+              ?>
+              
             </div><!-- /.carousel -->
           </div><!-- /.col-lg-12 -->
         </div><!-- /.row -->
@@ -274,7 +220,7 @@
               <a href="#" class="btn btn__primary mt-30 mr-30">Our Services</a>
               <div class="contact-chip mt-30">
                 <div class="contact__chip-img">
-                  <img src="assets/images/testimonials/thumbs/3.png" alt="avatar">
+                   <i class="fa fa-user-circle" style="font-size:53px"></i>
                 </div><!-- /.contact__chip-ig -->
                 <div class="contact__chip-info">
                   <h6>(+91) 7404299390</h6>
@@ -399,103 +345,6 @@
     </div><!-- /.container -->
   </section><!-- /.videoBanner -->
 
-  <!-- =====================
-       portfolio Carousel
-    ======================== -->
-  <section id="portfolioCarousel" class="portfolio-carousel portfolio-classic pt-90 pb-70">
-    <div class="container">
-      <div class="row mb-50">
-        <div class="col-sm-12 col-md-12 col-lg-7">
-          <div class="heading">
-            <span class="heading__subtitle">We Work With Global Industries!</span>
-            <h3 class="heading__title mb-0">Featured portfolio</h3>
-          </div><!-- /.heading -->
-        </div><!-- /.col-lg-7 -->
-        <div class="col-sm-12 col-md-12 col-lg-5">
-          <div class="cta__banner">
-            <div class="bg-img"></div>
-            <h5 class="cta__title">Dedicated Customer <br> Teams & An Agile Services</h5>
-            <p class="cta__desc">Building relationships and portfolio that last. Serving an impressive list of
-              long-term clients with
-              experience and expertise in industries.</p>
-            <a href="#" class="btn btn__white btn__link">
-              <i class="icon-arrow-right arrow-rounded arrow-rounded-white"></i>
-              <span>View Our Works</span>
-            </a>
-          </div><!-- /.cta__banner -->
-        </div><!-- /.col-lg-5 -->
-      </div><!-- /.row-->
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-          <div class="carousel owl-carousel carousel-arrows" data-slide="3" data-slide-md="2" data-slide-sm="1"
-            data-autoplay="true" data-nav="true" data-dots="false" data-space="30" data-loop="true" data-speed="800">
-            <div class="portfolio-item">
-              <div class="portfolio__img">
-                <img src="assets/images/case-studies/grid/1.jpg" alt="portfolio img">
-                <a href="#" class="view__icon">View</a>
-              </div><!-- /.portfolio-img -->
-              <div class="portfolio__content">
-                <h4 class="portfolio__title"><a href="#">Floride Chemicals Factory</a></h4>
-                <div class="portfolio__cat">
-                  <a href="#">Chemicals</a><a href="#">oil & Gas</a>
-                </div><!-- /.portfolio-cat -->
-              </div><!-- /.portfolio-content -->
-            </div><!-- /.portfolio-item -->
-            <div class="portfolio-item">
-              <div class="portfolio__img">
-                <img src="assets/images/case-studies/grid/2.jpg" alt="portfolio img">
-                <a href="#" class="view__icon">View</a>
-              </div><!-- /.portfolio-img -->
-              <div class="portfolio__content">
-                <h4 class="portfolio__title"><a href="#">Highway Energy Station</a></h4>
-                <div class="portfolio__cat">
-                  <a href="#">Construction </a><a href="#">Energy</a>
-                </div><!-- /.portfolio-cat -->
-              </div><!-- /.portfolio-content -->
-            </div><!-- /.portfolio-item -->
-            <div class="portfolio-item">
-              <div class="portfolio__img">
-                <img src="assets/images/case-studies/grid/3.jpg" alt="portfolio img">
-                <a href="#" class="view__icon">View</a>
-              </div><!-- /.portfolio-img -->
-              <div class="portfolio__content">
-                <h4 class="portfolio__title"><a href="#">Villy Manufacturing Inc</a></h4>
-                <div class="portfolio__cat">
-                  <a href="#">Engineering</a><a href="#">Auto</a>
-                </div><!-- /.portfolio-cat -->
-              </div><!-- /.portfolio-content -->
-            </div><!-- /.portfolio-item -->
-            <div class="portfolio-item">
-              <div class="portfolio__img">
-                <img src="assets/images/case-studies/grid/4.jpg" alt="portfolio img">
-                <a href="#" class="view__icon">View</a>
-              </div><!-- /.portfolio-img -->
-              <div class="portfolio__content">
-                <h4 class="portfolio__title"><a href="#">Regulatory Compliance Seminar</a></h4>
-                <div class="portfolio__cat">
-                  <a href="#">Construction</a><a href="#">Engineering</a>
-                </div><!-- /.portfolio-cat -->
-              </div><!-- /.portfolio-content -->
-            </div><!-- /.portfolio-item -->
-            <div class="portfolio-item">
-              <div class="portfolio__img">
-                <img src="assets/images/case-studies/grid/5.jpg" alt="portfolio img">
-                <a href="#" class="view__icon">View</a>
-              </div><!-- /.portfolio-img -->
-              <div class="portfolio__content">
-                <h4 class="portfolio__title"><a href="#">Documents & Electronic Data</a></h4>
-                <div class="portfolio__cat">
-                  <a href="#">Engineering</a><a href="#">oil & Gas</a>
-                </div><!-- /.portfolio-cat -->
-              </div><!-- /.portfolio-content -->
-            </div><!-- /.portfolio-item -->
-          </div><!-- /.carousel -->
-        </div><!-- /.col-lg-12 -->
-      </div><!-- /.row -->
-    </div><!-- /.container -->
-  </section><!-- .portfolio-carousel -->
-
-
   <!-- =========================
            Banner 2
      =========================== -->
@@ -512,20 +361,25 @@
                   and service.</p>
               </div>
               <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="form-group"><input type="text" class="form-control" placeholder="Name"></div>
+                <div class="form-group"><input type="text" class="form-control" placeholder="Name" required></div>
               </div><!-- /.col-lg-6 -->
               <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="form-group"><input type="email" class="form-control" placeholder="Email"></div>
+                <div class="form-group"><input type="email" class="form-control" placeholder="Email" required></div>
               </div><!-- /.col-lg-6 -->
               <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="form-group"><input type="text" class="form-control" placeholder="Phone"></div>
+                <div class="form-group"><input type="text" class="form-control" placeholder="Phone" required></div>
               </div><!-- /.col-lg-6 -->
               <div class="col-sm-6 col-md-6 col-lg-6">
                 <div class="form-group form-group-select">
-                  <select class="form-control">
-                    <option>Select Your Industry</option>
-                    <option>Industry 1</option>
-                    <option>Industry 2</option>
+                  <select class="form-control" required>
+                    <option>Select Your Category</option>
+                     <?php
+                         foreach($allActiveMaterialGroup as $materialGroup){
+                           ?>
+                             <option><?php echo $materialGroup["MATERIAL_GROUP_NAME"]; ?> </option>
+                           <?php 
+                         }
+                     ?>
                   </select>
                 </div>
               </div>

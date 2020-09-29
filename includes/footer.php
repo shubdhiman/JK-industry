@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-4 footer__widget footer__widget-about mb-30">
             <div class="footer__widget-content">
-              <img src="assets/images/logo/logo-footer.png" alt="logo">
+              <img src="assets/images/logo/jk-ind-logo.png" width="100" alt="logo">
               <p>We produce positive results from ever growing Industrial & manufacturing, we have established a
                 corporate mandate to maintain strong core values.</p>
               <a href="#" class="btn btn__primary btn__link btn__hover2">

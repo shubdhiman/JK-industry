@@ -26,7 +26,7 @@
         data-slide-sm="1" data-autoplay="false" data-nav="true" data-dots="true" data-space="0" data-loop="true"
         data-speed="3000" data-transition="fade" data-animate-out="fadeOut" data-animate-in="fadeIn">
         <div class="slide-item align-v-h bg-overlay bg-overlay-3">
-          <div class="bg-img"><img src="assets/images/sliders/1.jpg" alt="slide img"></div>
+          <div class="bg-img"><img src="assets/images/backgrounds/material/1.jpg" alt="slide img"></div>
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">
@@ -44,7 +44,7 @@
           </div><!-- /.container -->
         </div><!-- /.slide-item -->
         <div class="slide-item align-v-h bg-overlay bg-overlay-3">
-          <div class="bg-img"><img src="assets/images/sliders/2.jpg" alt="slide img"></div>
+          <div class="bg-img"><img src="assets/images/backgrounds/material/6.jpg" alt="slide img"></div>
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">
@@ -62,7 +62,7 @@
           </div><!-- /.container -->
         </div><!-- /.slide-item -->
         <div class="slide-item align-v-h bg-overlay bg-overlay-3">
-          <div class="bg-img"><img src="assets/images/sliders/4.jpg" alt="slide img"></div>
+          <div class="bg-img"><img src="assets/images/backgrounds/material/5.jpg" alt="slide img"></div>
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">

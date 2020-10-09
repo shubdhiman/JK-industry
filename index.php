@@ -16,6 +16,8 @@
 <?php
     include("./api/helper/db.php");
     include("./api/products/Products.php");
+    include("./api/helper/config.php");
+    
     $product = new Products($conn);
     $allActiveItemList = $product->getActiveItemList($conn);
     $allActiveMaterialGroup = $product->getActiveMaterialGroup($conn);
@@ -108,7 +110,7 @@
                       ?>
                          <div class="service-item">
                             <div class="service__img">
-                              <img src="assets/images/services/1.jpg" alt="service" class="img-fluid">
+                              <img src="<?php echo $item_img_base_url.'/'.$item["ITEM_IMG"]; ?>" alt="service" style="height:200px;" class="img-fluid">
                             </div><!-- /.service-img -->
                             <div class="service__content">
                               <h4 class="service__title"><?php echo $item["ITEM_NAME"]; ?></h4>

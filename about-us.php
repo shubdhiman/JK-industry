@@ -35,7 +35,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-              <h1 class="pagetitle__heading">About Axima</h1>
+              <h1 class="pagetitle__heading">About J K Industries</h1>
               <p class="pagetitle__desc">
                 We produce positive results from ever-growing Industrial &
                 manufacturing estates, we have established a corporate mandate
@@ -623,7 +623,7 @@
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-7">
               <strong class="text-center d-block mt-50 mb-20"
-                >We will get back to you within 24 hours.</strong
+                >We will get back to you within 9:00 am to 7:00 pm.</strong
               >
             </div>
             <!-- /.col-lg-7 -->
@@ -638,7 +638,7 @@
                     <div class="contact__info-box-text">
                       <span>Call Us:</span>
                       <strong
-                        ><a href="tel:00123968574">(002) 123968574</a></strong
+                        ><a href="tel:9671770772">(+91) 9671770772</a></strong
                       >
                     </div>
                     <!-- /.contact__info-box-text -->
@@ -655,8 +655,8 @@
                     <div class="contact__info-box-text">
                       <span>Email Us:</span>
                       <strong
-                        ><a href="mailto:Axima@7oroof.com"
-                          >Axima@7oroof.com</a
+                        ><a href="mailto:jkindustries8282@gmail.com"
+                          >jkindustries8282@gmail.com</a
                         ></strong
                       >
                     </div>

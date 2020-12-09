@@ -5637,6 +5637,7 @@ textarea.form-control {
   display: inline-block;
   width: auto !important;
   max-width: 100%;
+  height: 70px;
 }
 
 /* Medium Size Screens */

@@ -56,37 +56,45 @@
                     <div class="text-center">
                       <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                     </div>
-                    <form class="user">
+                    <form action="" method="post" class="user" onsubmit="return validateLoginForm()">
                       <div class="form-group">
                         <input
                           type="email"
                           class="form-control form-control-user"
-                          id="exampleInputEmail"
+                          name="email"
+                          id="email"
                           aria-describedby="emailHelp"
                           placeholder="Enter Email Address..."
+                          required
                         />
                       </div>
                       <div class="form-group">
                         <input
                           type="password"
                           class="form-control form-control-user"
-                          id="exampleInputPassword"
+                          id="password"
+                          name="password"
                           placeholder="Password"
+                          required
                         />
                       </div>
 
-                      <a
-                        href="index.html"
+                      <button type="submit" name="login"
                         class="btn btn-primary btn-user btn-block"
                       >
                         Login
-                      </a>
+                      </button>
+
+                       <div class="alert alert-danger mt-3 error__box">
+                             <i class="fa fa-times-circle"></i> <span class="error__text font-weight-bold"></span>
+                       </div>
+
                       <hr />
                     </form>
                     <div class="text-center">
-                      <a class="small" href="forgot-password.html"
+                      <!-- <a class="small" href="forgot-password.html"
                         >Forgot Password?</a
-                      >
+                      > -->
                     </div>
                   </div>
                 </div>
@@ -106,5 +114,22 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    
+
+    <script>
+        $(".error__box").hide();
+        function validateLoginForm(){ 
+            let password = $("#password").val();
+            let passwordRegx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+            if(password.match(passwordRegx)){
+                $(".error__box").hide();                
+                return true;
+            }
+            $(".error__text").text('');
+             $(".error__box").show();
+             return false;
+        }
+    </script>
+
   </body>
 </html>

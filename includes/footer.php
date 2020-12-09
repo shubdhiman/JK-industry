@@ -17,8 +17,8 @@
             <h6 class="footer__widget-title">Quick Contact</h6>
             <div class="footer__widget-content">
               <p>If you have any questions or need help, feel free to contact with our team.</p>
-              <a href="tel:07404299390" class="phone-link">
-                <i class="icon-phone"></i><span>(+91) 7404299390</span>
+              <a href="tel:09671770772" class="phone-link">
+                <i class="icon-phone"></i><span>(+91) 9671770772</span>
               </a>
               <p>Tehsil Road, Near Mikky Palace, Shahzadpur(Ambala)</p>
               <ul class="social__icons list-unstyled mt-30 mb-30">
@@ -70,7 +70,7 @@
                 </div><!-- /.footer__contact-item-icon -->
                 <div class="footer__contact-item-text">
                   <span>Call Us:</span>
-                  <strong><a href="tel:7404299390">(+91) 7404299390</a></strong>
+                  <strong><a href="tel:9671770772">(+91) 9671770772</a></strong>
                 </div><!-- /.footer__contact-item-text -->
               </div><!-- /.footer__contact-item -->
               <div class="footer__contact-item">
@@ -88,7 +88,7 @@
                 </div><!-- /.footer__contact-item-icon -->
                 <div class="footer__contact-item-text">
                   <span>Opening Hours:</span>
-                  <strong>Mon-Sun: 9am – 7pm</strong>
+                  <strong>Mon-Sun: 9:00 am – 7:00 pm</strong>
                 </div><!-- /.footer__contact-item-text -->
               </div><!-- /.footer__contact-item -->
               <!-- <div class="footer__contact-item">

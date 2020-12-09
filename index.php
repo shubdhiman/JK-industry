@@ -108,15 +108,14 @@
                       ?>
                          <div class="service-item">
                             <div class="service__img">
-                              <img src="assets/images/services/1.jpg" alt="service" class="img-fluid">
+                              <img src="assets/images/backgrounds/products/<?php echo $item["ITEM_IMAGE"];?>" alt="service" class="img-fluid" style="height:200px">
                             </div><!-- /.service-img -->
                             <div class="service__content">
                               <h4 class="service__title"><?php echo $item["ITEM_NAME"]; ?></h4>
-                              <p class="service__desc">Petroleum and natural gas are nonrenewable sources of energy, a liquid found
-                                underground that can be used to make gasoline.</p>
+                              <p class="service__desc"><?php echo substr($item["ITEM_DESCRIPTION"],0,100); ?>...</p>
                               <a href="#" class="btn btn__secondary btn__link">
                                 <i class="icon-arrow-right arrow-rounded"></i>
-                                <span><?php echo $item["MATERIAL_GROUP_NAME"]; ?></span>
+                                <span>Read More</span>
                               </a>
                             </div><!-- /.service-content -->
                           </div><!-- /.service-item -->
@@ -174,25 +173,17 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="carousel owl-carousel" data-slide="6" data-slide-md="4" data-slide-sm="2" data-autoplay="true"
-              data-nav="false" data-dots="false" data-space="20" data-loop="true" data-speed="700">
-              <div class="client">
-                <a href="#"><img src="assets/images/clients/9.png" alt="client"></a>
-              </div><!-- /.client -->
-              <div class="client">
-                <a href="#"><img src="assets/images/clients/10.png" alt="client"></a>
-              </div><!-- /.client -->
-              <div class="client">
-                <a href="#"><img src="assets/images/clients/11.png" alt="client"></a>
-              </div><!-- /.client -->
-              <div class="client">
-                <a href="#"><img src="assets/images/clients/12.png" alt="client"></a>
-              </div><!-- /.client -->
-              <div class="client">
-                <a href="#"><img src="assets/images/clients/13.png" alt="client"></a>
-              </div><!-- /.client -->
-              <div class="client">
-                <a href="#"><img src="assets/images/clients/11.png" alt="client"></a>
-              </div><!-- /.client -->
+              data-nav="false" data-dots="false" data-space="50" data-loop="true" data-speed="700">
+              <?php 
+                 $brandImages = ["avon.jpg","everest.jpeg","everest_super.jpg","jsw.png","jyoti.png","sail.png","tata_durashine.png","tata_shaktee.jfif","tata_structura.png"];
+                 foreach($brandImages as $image){
+                   ?>
+                         <div class="client">
+                            <a href="#"><img src="assets/images/backgrounds/brands/<?php echo $image; ?>" alt="client"></a>
+                          </div><!-- /.client --> 
+                   <?php 
+                 }
+              ?>
             </div><!-- /.carousel -->
           </div><!-- /.col-lg-12 -->
         </div><!-- /.row -->
@@ -223,7 +214,7 @@
                    <i class="fa fa-user-circle" style="font-size:53px"></i>
                 </div><!-- /.contact__chip-ig -->
                 <div class="contact__chip-info">
-                  <h6>(+91) 7404299390</h6>
+                  <h6>(+91) 9671770772</h6>
                   <span>Sales Representative</span>
                 </div><!-- /.contact__chip-info -->
               </div><!-- /.contact-chip -->
@@ -441,7 +432,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12">
-          <strong class="text-center d-block mt-50 mb-20">We will get back to you within 24 hours.</strong>
+          <strong class="text-center d-block mt-50 mb-20">We will get back to you within 9:00 am to 7:00 pm.</strong>
         </div><!-- /.col-lg-7 -->
         <div class="col-sm-12 col-md-12 col-lg-12">
           <div class="row">
@@ -452,7 +443,7 @@
                 </div><!-- /.contact__info-box-icon -->
                 <div class="contact__info-box-text">
                   <span>Call Us:</span>
-                  <strong><a href="tel:07404299390">(+91) 74042-99390</a></strong>
+                  <strong><a href="tel:09671770772">(+91) 9671770772</a></strong>
                 </div><!-- /.contact__info-box-text -->
               </div><!-- /.contact__info-box -->
             </div><!-- /.col-lg-6 -->

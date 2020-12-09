@@ -224,7 +224,7 @@
                    <i class="fa fa-user-circle" style="font-size:53px"></i>
                 </div><!-- /.contact__chip-ig -->
                 <div class="contact__chip-info">
-                  <h6>(+91) 7404299390</h6>
+                  <h6>(+91) 9671770772</h6>
                   <span>Sales Representative</span>
                 </div><!-- /.contact__chip-info -->
               </div><!-- /.contact-chip -->
@@ -453,7 +453,7 @@
                 </div><!-- /.contact__info-box-icon -->
                 <div class="contact__info-box-text">
                   <span>Call Us:</span>
-                  <strong><a href="tel:07404299390">(+91) 74042-99390</a></strong>
+                  <strong><a href="tel:09671770772">(+91) 96717-70772</a></strong>
                 </div><!-- /.contact__info-box-text -->
               </div><!-- /.contact__info-box -->
             </div><!-- /.col-lg-6 -->

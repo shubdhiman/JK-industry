@@ -3,7 +3,7 @@
     =========================== -->
     <header id="header" class="header header-layout1">
       <div class="header__promo-text text-right mr-4">
-       <span> <i class="fa fa-phone"></i>  (+91) 7404299390</span>
+       <span> <i class="fa fa-phone"></i>  (+91) 96717-70772</span>
       </div><!-- /.header__promo-text -->
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container-fluid px-0">

@@ -10,7 +10,7 @@ class Products{
 
     // get all active item list 
     function getActiveItemList(){
-        $sql = "SELECT item_list.ITEM_LIST_ID,item_list.ITEM_IMG,item_list.ITEM_NAME,parent_group.PARENT_GROUP_NAME,material_group.MATERIAL_GROUP_NAME FROM  item_list LEFT JOIN parent_group ON  parent_group.PARENT_GROUP_ID = item_list.PARENT_GROUP_ID LEFT JOIN material_group ON material_group.MATERIAL_GROUP_ID = item_list.PARENT_GROUP_ID  WHERE  item_list.ITEM_STATUS = 'ACTIVE'";
+        $sql = "SELECT item_list.ITEM_LIST_ID,item_list.ITEM_IMAGE,item_list.ITEM_NAME,parent_group.PARENT_GROUP_NAME,material_group.MATERIAL_GROUP_NAME FROM  item_list LEFT JOIN parent_group ON  parent_group.PARENT_GROUP_ID = item_list.PARENT_GROUP_ID LEFT JOIN material_group ON material_group.MATERIAL_GROUP_ID = item_list.PARENT_GROUP_ID  WHERE  item_list.ITEM_STATUS = 'ACTIVE'";
         $result = $this->conn->query($sql);
         $rows = $result->fetch_all(MYSQLI_ASSOC);
         return $rows;

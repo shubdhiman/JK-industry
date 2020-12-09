@@ -16,7 +16,6 @@
 <?php
     include("./api/helper/db.php");
     include("./api/products/Products.php");
-    include("./api/helper/config.php");
     
     $product = new Products($conn);
     $allActiveItemList = $product->getActiveItemList($conn);
